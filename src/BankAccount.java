@@ -9,7 +9,7 @@ public class BankAccount {
         amount += sum;
     }
 
-    public void withDraw(double sum) throws LimitException {
+    public void withDraw(int sum) throws LimitException {
         if (sum > amount) {
             throw new LimitException("Запрашиваемая больше чем сумма на балансе карты", amount);
         }
